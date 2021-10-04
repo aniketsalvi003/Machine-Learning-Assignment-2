@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 style="text-align: center">Affair Prediction</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <style>
+body {
+  background-image: url('https://www.whitehouse.gov/wp-content/uploads/2017/11/WhiteHouse-Faded-1387x720.jpg');
+}
+</style>
+            <style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+#Intercept,occ_2,occ_3,occ_4,occ_5,occ_6,occ_husb_2,occ_husb_3,occ_husb_4,
+#occ_husb_5,occ_husb_6,rate_marriage,children,religious,age,yrs_married,educ
+
+</style>
+            <input size="1000" type="number" step="0.00001" name="Intercept" id="Intercept" placeholder="Intercept"><br>
+            <input type="number" step="0.01" name="occ_2" id="occ_2" placeholder="occ_2 "><br>
+            <input type="number" step="0.01" name="occ_3" id="occ_3" placeholder="occ_3"><br>
+            <input type="number" step="0.01" name="occ_4" id="occ_4" placeholder="occ_4"><br>
+            <input type="number" step="0.0001" name="occ_5" id="occ_5" placeholder="occ_5"><br>
+            <input type="number" step="0.0001"  name="occ_6" id="occ_6"placeholder="occ_6"><br>
+            <input type="number" step="0.0001"  name="occ_husb_2" id="occ_husb_2"placeholder="occ_husb_2"><br>
+            <input type="number" step="0.0001"  name="occ_husb_3" id="occ_husb_3"placeholder="occ_husb_3"><br>
+            <input type="number" step="0.0001"  name="occ_husb_4" id="occ_husb_4"placeholder="occ_husb_4"><br>
+            <input type="number" step="0.0001"  name="occ_husb_5" id="occ_husb_5"placeholder="occ_husb_5"><br>
+            <input type="number" step="0.0001"  name="occ_husb_6" id="occ_husb_6"placeholder="occ_husb_6"><br>
+            <input type="number" step="0.0001"  name="rate_marriage" id="rate_marriage"placeholder="rate_marriage"><br>
+            <input type="number" step="0.01" name="children" id="chilren"placeholder="chilren"><br>
+            <input type="number" step="0.0001" name="religious" id="religious"placeholder="religious"><br>
+            <input type="number" step="0.01" name="age" id="age"placeholder="age"><br>
+            <input type="number" step="0.01"  name="yrs_married" id="yrs_married"placeholder="yrs_married"><br>
+            <input type="number" step="0.01" name="educ" id="educ"placeholder="educ"><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
+    </div>
+    </div>
+
+</body>
+</html>
